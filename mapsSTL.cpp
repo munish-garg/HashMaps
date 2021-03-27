@@ -21,5 +21,17 @@ int main(){
     else{
         cout<<"The fruit for which you are searching is not present in the map."<<endl;
     }
+
+    //3. Erase.....
+    m.erase("Banana");
+
+    //If the particular key is present, then the function will return 1 else 0 
+    if(m.count("Banana")){
+        cout<<"The Banana fruit is present having the price "<<m["Banana"]<<"."<<endl;
+    }
+    else{
+        cout<<"The fruit is not present."<<endl;
+    }
     return 0;
+    //Map stores only one occurence of the key, i.e., unique key.... 
 }
