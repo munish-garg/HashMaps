@@ -32,6 +32,14 @@ int main(){
     else{
         cout<<"The fruit is not present."<<endl;
     }
+
+    //Iterate over all the key-value pairs
+    m["Litchi"] = 110;
+    m["Guava"] = 120;
+    m["Mango"] = 150;
+    for(auto x:m){
+        cout<<x.first<<" "<<x.second<<endl;
+    }
     return 0;
     //Map stores only one occurence of the key, i.e., unique key.... 
 }
